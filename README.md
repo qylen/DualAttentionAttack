@@ -44,3 +44,13 @@ python test.py --texture=[path to texture]
 ```
 
 results will be stored in `src/acc.txt`
+
+while the requirement is:
+python:3.6.2
+pytorch:1.4
+neural_render: which is in the src/neural_renderer, don't install the version in the pip git or original git. In the train.py ,add this code:
+sys.path.append(".../src/neural_renderer")
+chainer:6.7.0
+my cuda version is 10.1,so I install the cudatoolkit 10.1
+cupy:6.7.0(cupy-cuda101=6.7.0)
+numpy:1.14.0
